@@ -1,0 +1,5 @@
+admin admin123 admin
+john john123 athlete
+alice alice123 athlete
+coach coach123 coach
+kamesh sp#1 athlete

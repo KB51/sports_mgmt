@@ -1,0 +1,3 @@
+john registered for ChampionsLeague
+alice registered for SummerCup
+john registered for WinterGames
