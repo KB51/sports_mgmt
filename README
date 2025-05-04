@@ -1,0 +1,11 @@
+This is a Sports Management System software project.
+main functionalities include-
+1. access-based login page (athletes and admin).
+2. after login, different menu list available for different roles of users, i.e, admin or athlete.
+3.1. admin can list upcoming tournaments
+3.2. admin can edit tournament schedule
+3.3 admin can register new players
+
+4.1 athlete can view tournament list
+4.2 athlete can register to future tournaments.
+4.3 athlete can view list of registered players
