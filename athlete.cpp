@@ -1,12 +1,14 @@
 #include "athlete.h"
 #include "tournament.h"
 #include <iostream>
+#include "utils.h"
 
 Athlete::Athlete() : User() {}
 Athlete::Athlete(const std::string& uname) : User(uname, "", "athlete") {}
 
 void Athlete::athleteMenu() {
     int choice;
+    clearScreen();
     while (true) {
         std::cout << "\n--- Athlete Menu ---\n";
         std::cout << "1. View Tournaments\n";
