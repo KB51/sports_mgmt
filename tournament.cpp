@@ -3,8 +3,10 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include "utils.h"
 
 void Tournament::addTournament() {
+    clearScreen();
     std::string name, date, time, location;
     std::cin.ignore();
     std::cout << "Enter tournament name: ";
@@ -22,6 +24,7 @@ void Tournament::addTournament() {
 }
 
 void Tournament::viewTournaments() {
+    clearScreen();
     std::ifstream file("tournaments.txt");
     if (!file) {
         std::cout << "No tournaments found.\n";
@@ -41,6 +44,7 @@ void Tournament::viewTournaments() {
 }
 
 void Tournament::editTournament() {
+    clearScreen();
     std::vector<std::string> lines;
     std::ifstream file("tournaments.txt");
     if (!file) {
@@ -88,6 +92,7 @@ void Tournament::editTournament() {
 }
 
 void Tournament::registerForTournament(const std::string& athleteName) {
+    clearScreen();
     std::string tournament;
     std::cin.ignore();
     std::cout << "Enter tournament name to register: ";
