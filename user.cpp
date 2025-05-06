@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "utils.h"
 
 User::User() : userName(""), password(""), role("") {}
 
@@ -21,6 +22,7 @@ bool User::isValidUsername(const std::string& username) {
 }
 
 void User::signUp() {
+    clearScreen();
     std::cout << "Enter username: ";
     std::cin >> userName;
     if (isValidUsername(userName)) {
@@ -37,6 +39,7 @@ void User::signUp() {
 }
 
 bool User::login() {
+    clearScreen();
     std::string uname, pwd;
     std::cout << "Enter username: ";
     std::cin >> uname;
