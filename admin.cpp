@@ -3,12 +3,14 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "utils.h"
 
 Admin::Admin() : User() {}
 Admin::Admin(const std::string& uname) : User(uname, "", "admin") {}
 
 void Admin::adminMenu() {
     int choice;
+    clearScreen();
     while (true) {
         std::cout << "\n--- Admin Menu ---\n";
         std::cout << "1. Add Tournament\n";
